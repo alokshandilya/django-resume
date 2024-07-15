@@ -1,6 +1,6 @@
 asgiref==3.8.1
 Django==5.0.7
-django-ckeditor==6.7.1
+django-ckeditor==6.6.1
 django-debug-toolbar==4.4.6
 django-js-asset==2.2.0
 greenlet==3.0.3
