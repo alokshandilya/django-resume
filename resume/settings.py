@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "main",
+    "ckeditor",
 ]
 
 MIDDLEWARE = [
@@ -62,6 +65,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "resume.context_processors.menu_items",
+                "resume.context_processors.project_context",
             ],
         },
     },
@@ -105,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Kolkata"
 
 USE_I18N = True
 
@@ -115,9 +120,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    # directories
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "media"),
+]
+
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "mediafiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
