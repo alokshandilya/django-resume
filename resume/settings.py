@@ -33,6 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "alokshandilya.pythonanywhere.com",
+    "localhost",
 ]
 
 
