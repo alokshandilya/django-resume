@@ -2,12 +2,14 @@
 
 - this project aims to replace my current portfolio website deployed at [link](https://alokshandilya.vercel.app)
 
-## Screenshot v1
+## Screenshot v2
 
-![image](https://github.com/user-attachments/assets/73bf140f-2320-4a2e-b596-0ef672e4be75)
+![image](https://github.com/user-attachments/assets/95761020-7892-4367-b34e-af63ff6c284d)
 
-## TODO in v2
+## TODO in v3
 
-- deploy @ [https://alokshandilya.vercel.com](https://alokshandilya.vercel.com)
-- add projects
-- add certifications
+- [x] deploy @ [https://alokshandilya.vercel.com](https://alokshandilya.vercel.com)
+  - *rather deployed @ [https://alokshandilya.pythonanywhere.com](https://alokshandilya.pythonanywhere.com)
+- [x] add certifications
+- [x] add basic layout and base for editing every section without tinkering with source code
+  - *use [django admin panel](https://alokshandilya.pythonanywhere.com/admin)
