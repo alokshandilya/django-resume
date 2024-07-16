@@ -4,7 +4,7 @@
 
 ## Screenshot v2
 
-![image](https://github.com/user-attachments/assets/95761020-7892-4367-b34e-af63ff6c284d)
+![image](https://github.com/user-attachments/assets/c61d59ec-d604-446c-b377-328385bfbce7)
 
 ## TODO in v3
 
