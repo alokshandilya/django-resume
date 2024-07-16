@@ -126,7 +126,7 @@ a,
 .smTitle {
   font-size: 22px;
   line-height: normal;
-  font-weight: var(--regular);
+  font-weight: var(--bold);
   font-family: var(--titleFont)
 }
 
